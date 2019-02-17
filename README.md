@@ -1,2 +1,31 @@
-# parametric-stackable-box
-Yet another parametric stackable box
+# Parametric Stackable Box
+
+<p align="center">
+  <img align="center" width="80%" height="auto" src="/images/main.png">
+</p>
+
+The design is a blatant rip-off of the famous [Stackable Box](https://www.thingiverse.com/thing:647425).
+
+Pros:
+- It's parametric! (written in OpenSCAD)
+- Ticker 2mm wall to improve stackability.
+
+Cons:
+- No fancy variants/accessories. (for the moment)
+
+
+## Dependencies
+- [OskarLinde]'s [scad-utils](https://github.com/OskarLinde/scad-utils)
+  - Install dependencies to your OpenSCAD libraries dir.
+```sh
+$ cd ~/.local/share/OpenSCAD/libraries
+$ git clone https://github.com/OskarLinde/scad-utils
+```
+
+## Parameters
+<p align="center">
+  <img align="center" width="100%" height="auto" src="/images/params_1.png">
+</p>
+
+## License
+MIT
