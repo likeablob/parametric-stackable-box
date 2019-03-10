@@ -8,7 +8,7 @@ The design is a blatant rip-off of the famous [Stackable Box](https://www.thingi
 
 Pros:
 - It's parametric! (written in OpenSCAD)
-- Ticker 2mm wall to improve stackability.
+- Ticker 1.6 mm wall to improve stackability.
 
 Cons:
 - No fancy variants/accessories. (for the moment)
