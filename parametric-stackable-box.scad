@@ -37,12 +37,13 @@ module base(r=1) {
 }
 
 /* Parameters 2 */
-WALL_THICK = 1;
+WALL_THICK = 0.4*4;
 
 HOLDER_Z_TOTAL = 10;
 HOLDER_Z_JOINT = 3;
 HOLDER_Z = HOLDER_Z_TOTAL - HOLDER_Z_JOINT;
-HOLDER_DELTA = 2;
+HOLDER_DELTA = 0.8+0.4*4;
+HOLDER_CLEARANCE = 0.4*2;
 
 FRONT_EDGE_DEG = 35;
 FRONT_EDGE_LEN = 20;
@@ -97,7 +98,7 @@ module body() {
     // holder inner space
     translate([0, 0, BODY_Z-HOLDER_Z+1])
     linear_extrude(height=HOLDER_Z, center=!true, convexity=10, twist=0)
-    offset(r=0.5)
+    offset(r=HOLDER_CLEARANCE)
     base();
 
     // front space
