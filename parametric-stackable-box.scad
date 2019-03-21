@@ -1,6 +1,8 @@
 include <scad-utils/mirror.scad>
 include <scad-utils/morphology.scad>
 
+$fn=30;
+
 /* Parameters */
 BODY_X = 80;
 BODY_Y = 110;
