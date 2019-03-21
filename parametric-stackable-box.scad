@@ -53,6 +53,10 @@ FRONT_EDGE_LEN = 20;
 FRONT_EDGE_TOP_DEG = 30;
 FRONT_EDGE_TOP_LEN = 25;
 
+DRAW_BODY=true;
+DRAW_DIMEN=false;
+
+
 module body() {
   difference() {
     union() {
@@ -143,7 +147,6 @@ module frontEdgeTop() {
   );
 }
 
-DRAW_BODY=true;
 if (DRAW_BODY) {
   body();
 }
@@ -195,7 +198,7 @@ module dimenText(text, len, pos=0) {
   }
 }
 
-if (DRAW_BODY) {
+if (DRAW_DIMEN) {
   translate([0, 0, BODY_Z + 8])
   dimenText("BODY_Y", BODY_Y, 0);
 
