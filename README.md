@@ -39,27 +39,26 @@ $ make -j4
 ### [parametric-stackable-box](./parametric-stackable-box.stl)
 * basic model
 
-![parametric-stackable-box](./images/parametric-stackable-box_s.png)
+[![parametric-stackable-box](./images/parametric-stackable-box_s.png)](./parametric-stackable-box.stl)
 
 ### [variant-tall](./variant-tall.stl)
 * x1.5 times taller along BODY_Z
 
-![variant-tall](./images/variant-tall_s.png)
+[![variant-tall](./images/variant-tall_s.png)](./variant-tall.stl)
 
 ### [util-battery-organizer](./util-battery-organizer.stl)
 * AA battery organizer
 
-![util-battery-organizer](./images/util-battery-organizer_s.png)
+[![util-battery-organizer](./images/util-battery-organizer_s.png)](./util-battery-organizer.stl)
 
-### [util-generic-organizer-2x1](./util-generic-organizer-2x1)
-* generic organizer (2x1)
+### [util-generic-organizer-MxN](./util-generic-organizer-1x2.stl)
+* generic organizer
+* use ORG_DIV_X & ORG_DIV_Y to set the number of partitions
+* ORG_DIV_X = M, ORG_DIV_Y = N
 
-![util-generic-organizer-2x1](./images/util-generic-organizer-2x1_s.png)
-
-### [util-generic-organizer-2x2](./util-generic-organizer-2x2)
-* generic organizer (2x2)
-
-![util-generic-organizer-2x2](./images/util-generic-organizer-2x2_s.png)
+[![util-generic-organizer-2x1](./images/util-generic-organizer-1x2_s.png)](./util-generic-organizer-1x2.stl)
+[![util-generic-organizer-2x1](./images/util-generic-organizer-2x1_s.png)](./util-generic-organizer-2x1.stl)
+[![util-generic-organizer-2x2](./images/util-generic-organizer-2x2_s.png)](./util-generic-organizer-2x2.stl)
 
 ## License
 MIT
