@@ -1,6 +1,8 @@
 include <scad-utils/mirror.scad>
 include <scad-utils/morphology.scad>
 
+$fn=30;
+
 /* Parameters */
 BODY_X = 80;
 BODY_Y = 110;
@@ -141,8 +143,10 @@ module frontEdgeTop() {
   );
 }
 
-body();
-
+DRAW_BODY=true;
+if (DRAW_BODY) {
+  body();
+}
 
 /* Show dimentions */
 module dimenText(text, len, pos=0) {
@@ -191,18 +195,20 @@ module dimenText(text, len, pos=0) {
   }
 }
 
-translate([0, 0, BODY_Z + 8])
-dimenText("BODY_Y", BODY_Y, 0);
+if (DRAW_BODY) {
+  translate([0, 0, BODY_Z + 8])
+  dimenText("BODY_Y", BODY_Y, 0);
 
-translate([0, BODY_Y/2 + 8, BODY_Z/2])
-dimenText("BODY_Z", BODY_Z, 1);
+  translate([0, BODY_Y/2 + 8, BODY_Z/2])
+  dimenText("BODY_Z", BODY_Z, 1);
 
-translate([0, BODY_Y/2 + 8 + 8, HOLDER_Z_TOTAL/2 + BODY_Z - HOLDER_Z_TOTAL])
-dimenText("HOLDER_Z_TOTAL", HOLDER_Z_TOTAL, 1);
+  translate([0, BODY_Y/2 + 8 + 8, HOLDER_Z_TOTAL/2 + BODY_Z - HOLDER_Z_TOTAL])
+  dimenText("HOLDER_Z_TOTAL", HOLDER_Z_TOTAL, 1);
 
-translate([0, -BODY_Y/2 - 8, HOLDER_Z_JOINT/2 + BODY_Z - HOLDER_Z_TOTAL])
-dimenText("HOLDER_Z_JOINT", HOLDER_Z_JOINT, 2);
+  translate([0, -BODY_Y/2 - 8, HOLDER_Z_JOINT/2 + BODY_Z - HOLDER_Z_TOTAL])
+  dimenText("HOLDER_Z_JOINT", HOLDER_Z_JOINT, 2);
 
-translate([0, -BODY_Y/2, (FRONT_EDGE_LEN)*sin(FRONT_EDGE_DEG)/2])
-rotate([FRONT_EDGE_DEG, 0, 0])
-dimenText("FRONT_EDGE_LEN", FRONT_EDGE_LEN, 2);
+  translate([0, -BODY_Y/2, (FRONT_EDGE_LEN)*sin(FRONT_EDGE_DEG)/2])
+  rotate([FRONT_EDGE_DEG, 0, 0])
+  dimenText("FRONT_EDGE_LEN", FRONT_EDGE_LEN, 2);
+}
