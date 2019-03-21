@@ -51,6 +51,11 @@ $ make -j4
 
 ![util-battery-organizer](./images/util-battery-organizer_s.png)
 
+### [util-generic-organizer-2x1](./util-generic-organizer-2x1)
+* generic organizer (2x1)
+
+![util-generic-organizer-2x1](./images/util-generic-organizer-2x1_s.png)
+
 ### [util-generic-organizer-2x2](./util-generic-organizer-2x2)
 * generic organizer (2x2)
 
