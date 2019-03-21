@@ -11,7 +11,7 @@ Pros:
 - Ticker 1.6 mm wall to improve stackability.
 
 Cons:
-- No fancy variants/accessories. (WIP)
+- No fancy variants/accessories. ([WIP](#VariantsAccessories))
 
 
 ## Dependencies
@@ -50,6 +50,11 @@ $ make all
 * AA battery organizer
 
 ![util-battery-organizer](./images/util-battery-organizer_s.png)
+
+### [util-generic-organizer-2x2](./util-generic-organizer-2x2)
+* generic organizer (2x2)
+
+![util-generic-organizer-2x2](./images/util-generic-organizer-2x2_s.png)
 
 ## License
 MIT
