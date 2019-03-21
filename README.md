@@ -27,7 +27,7 @@ $ git clone https://github.com/OskarLinde/scad-utils
 ```sh
 $ git clone https://github.com/likeablob/parametric-stackable-box
 $ cd parametric-stackable-box
-$ make all
+$ make -j4
 ```
 
 ## Parameters
