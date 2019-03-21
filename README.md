@@ -33,5 +33,10 @@ $ git clone https://github.com/OskarLinde/scad-utils
 
 ![variant-tall](/images/variant-tall.png)
 
+### [util-battery-organizer](/util-battery-organizer.stl)
+* AA battery organizer
+
+![util-battery-organizer](/images/util-battery-organizer.png)
+
 ## License
 MIT
